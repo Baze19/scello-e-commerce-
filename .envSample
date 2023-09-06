@@ -1,1 +1,6 @@
-const PORT=5000
+PORT=5000
+username="your data base username"
+password= "password"
+ database= "db name"
+host= "db host"
+ dialect= "rdbms"
