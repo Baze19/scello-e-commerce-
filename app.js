@@ -39,6 +39,9 @@ const limit = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 Hour of 'ban' / lockout 0
   message: "Too many requests", // message to send
 });
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome scello api. type/api/cart to get all products in the carts</h1>");
+});
 
 app.use("/api/", allRoute, limit);
 
