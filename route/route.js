@@ -22,10 +22,12 @@ router.get("/cart", async (req, res) => {
 
 router.post("/addCart", async (req, res) => {
   try {
-    const { name, price } = req.body;
-    const cart = Cart.create({ name, price });
+    const data = req.body;
+    const cart = await Cart.create(data);
+   
     res.status(200).json({ data: cart, message: "successful" });
   } catch (error) {
+    console.log(error)
     res.status(500).json({ message: error.message });
   }
 });
