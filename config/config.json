@@ -4,7 +4,8 @@
     "password": "somepassword",
     "database": "scello",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": "3306"
     
   },
   "test": {
@@ -19,7 +20,8 @@
     "password": "somepassword",
     "database": "scello",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": "3306"
   
   }
 }
